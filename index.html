@@ -790,7 +790,7 @@ span.unfurl[data-reveal]:not(.is-in)::after{transition:none}
       <p class="heroc__sub">Tickets, visas, hotels, Umrah and holidays &mdash; put together by one team at a desk in Al Ghubra.</p>
       <div class="heroc__actions">
         <a class="btn btn--yellow" href="#enq">Start an enquiry <span class="arw">&rarr;</span></a>
-        <a class="btn btn--ghost-light" href="https://wa.me/96897566609?text=Hello%20DestiniGo%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">WhatsApp us</a>
+        <a class="btn btn--ghost-light" href="https://api.whatsapp.com/send?phone=96897566609&text=Hello%20DestiniGo%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">WhatsApp us</a>
       </div>
     </div>
 
@@ -1106,7 +1106,7 @@ span.unfurl[data-reveal]:not(.is-in)::after{transition:none}
         <p class="lead lead--onyellow" style="margin-top:1rem">Send the basics and we come back with options and a price. No booking engine, no card details &mdash; a person reads it.</p>
 
         <div class="enq__routes">
-          <a class="route" href="https://wa.me/96897566609?text=Hello%20DestiniGo%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener"><span>WhatsApp</span><span>+968 9756 6609</span><span>&rarr;</span></a>
+          <a class="route" href="https://api.whatsapp.com/send?phone=96897566609&text=Hello%20DestiniGo%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener"><span>WhatsApp</span><span>+968 9756 6609</span><span>&rarr;</span></a>
           <a class="route" href="mailto:destinigott@gmail.com"><span>Email</span><span>destinigott@gmail.com</span><span>&rarr;</span></a>
           <a class="route" href="tel:+96822569192"><span>Call</span><span>+968 2256 9192</span><span>&rarr;</span></a>
           <span class="route" style="cursor:default"><span>Office</span><span>Ghobra City Plaza, Al Ghubra, Muscat</span><span></span></span>
@@ -1244,7 +1244,7 @@ span.unfurl[data-reveal]:not(.is-in)::after{transition:none}
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="https://wa.me/96897566609" target="_blank" rel="noopener">WhatsApp +968 9756 6609</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=96897566609" target="_blank" rel="noopener">WhatsApp +968 9756 6609</a></li>
           <li><a href="tel:+96822569192">Call +968 2256 9192</a></li>
           <li><a href="mailto:destinigott@gmail.com">destinigott@gmail.com</a></li>
         </ul>
@@ -1888,7 +1888,7 @@ span.unfurl[data-reveal]:not(.is-in)::after{transition:none}
     var msg = compose();
     if (msg === null) return;
     say('ok', 'Opening WhatsApp with your details…');
-    go('https://wa.me/' + WA + '?text=' + encodeURIComponent(msg));
+    go('https://api.whatsapp.com/send?phone=' + WA + '&text=' + encodeURIComponent(msg));
   });
 
   form.querySelector('[data-copy]').addEventListener('click', function (e) {
