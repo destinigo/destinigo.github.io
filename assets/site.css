@@ -8,6 +8,9 @@
   /* PRIMARY */
   --yellow:#FFCA0B;
   --yellow-deep:#E8AE00;
+  /* WhatsApp */
+  --wa:#25D366;
+  --wa-deep:#1EB855;
   /* the surfaces that used to be yellow */
   --stealth:#15171A;
   --stealth-2:#1E2124;
@@ -27,7 +30,7 @@
   --line-onyellow:rgba(23,20,15,.2);
 
   --display:"Archivo","Arial Black",system-ui,sans-serif;
-  --body:"Figtree","Segoe UI",system-ui,-apple-system,sans-serif;
+  --body:"Archivo","Segoe UI",system-ui,-apple-system,sans-serif;
 
   --fs-h1:clamp(2.1rem,1.4rem + 3.2vw,4rem);
   --fs-h2:clamp(1.6rem,1.2rem + 2vw,2.7rem);
@@ -85,6 +88,8 @@ a{color:inherit}
 .btn--ink{background:var(--ink);color:var(--yellow)}
 .btn--yellow{background:var(--yellow);color:var(--ink)}
 .btn--ghost-ink{border-color:var(--ink);color:var(--ink)}
+.btn--wa{background:var(--wa);color:var(--ink);border-color:var(--wa)}
+.btn--wa:hover{background:var(--wa-deep);border-color:var(--wa-deep)}
 .btn--ghost-light{border-color:rgba(255,255,255,.42);color:var(--chalk)}
 .btn:focus-visible{outline:3px solid var(--yellow-deep);outline-offset:3px}
 .arw{display:inline-block;transition:transform .22s var(--ease)}
@@ -278,6 +283,7 @@ a{color:inherit}
 }
 .itin__t{font-weight:700;font-size:var(--fs-sm);line-height:1.35}
 .itin__t em{font-style:normal;font-weight:600;color:rgba(23,20,15,.55)}
+.itin__t em::before{content:"\00B7";margin-right:.4rem;opacity:.6}
 .itin ul{list-style:none;margin:.35rem 0 0;padding:0;display:grid;gap:.22rem}
 .itin ul li{position:relative;padding-left:.95rem;font-size:var(--fs-xs);color:rgba(23,20,15,.74)}
 .itin ul li::before{content:"";position:absolute;left:0;top:.58em;width:5px;height:5px;background:var(--yellow);outline:1px solid rgba(23,20,15,.35)}
