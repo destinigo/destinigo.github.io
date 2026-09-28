@@ -123,6 +123,11 @@ a{color:inherit}
   line-height:.94;letter-spacing:-.022em;text-wrap:balance;margin:0;
 }
 .lead{font-size:var(--fs-lead);color:var(--grey);max-width:46ch;margin:0}
+  /* On the yellow field, --grey sits at 3.3:1 against #FFCA0B, which fails
+     AA for body text. Ink takes the same line to 12:1. */
+  .reach .lead{color:var(--ink)}
+  /* same story for the eyebrow, and it is 11px, so it needs more not less */
+  .reach .eyebrow{color:rgba(23,20,15,.66)}
 .lead--onink{color:rgba(255,255,255,.74)}
 .lead--onyellow{color:rgba(255,255,255,.76)}
 .lead--ongrey{color:rgba(255,255,255,.8)}
